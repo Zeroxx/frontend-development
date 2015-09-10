@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Formulier Jasper Doornbos</title>
+</head>
+<body>
+<main>
+	<article>
+		<h1>Aanmelden</h1>
+		<p>
+		Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+		lopen de studenten stage, in het tweede en afstudeerjaar. 
+		</p>
+		<p>
+		<em>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+		Amsterdam.</em>
+		</p>
+		<p>
+		Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+		Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+		Voor vragen of opmerkingen kunt u <a href="http://google.com">contact</a> met ons op.
+		</p>
+		
+		<form action="POST">
+			<fieldset>
+			<legend> Contactgegevens </legend>
+			<label>Naam: <input name="naam" type="text" placeholder="Naam" autofocus></label>
+			<label>Bedrijf: <input name="bedrijf" type="text" placeholder="Bedrijf"></label>
+			<label>Adres: <input name="adres" type="text" placeholder="Adres"></label>
+			<label>Postcode: <input name="postcode" type="text" placeholder="Postcode"></label>
+			<label>Plaats: <input name="plaats" type="text" placeholder="Plaats"></label>
+			<label>Telefoon: <input name="telefoon" type="tel" placeholder="Telefoon"></label>
+			<label>Email: <input name="email" type="email" placeholder="Email"></label>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Ik wil mij aanmelden voor:</legend>
+			<label><input type="radio" name="aanmelden" value="project"> Voor een project </label>
+			<label><input type="radio" name="aanmelden" value="stage"> Als stagebedrijf	</label>
+			</fieldset>
+			
+			<section>
+				<fieldset>
+				<legend> Project </legend>
+				<label>Titel <input name="titel" type="text" placeholder="Titel"></label>
+				<label>Opdrachtomschrijving <textarea name="opdrachtomschrijving" placeholder="Opdrachtomschrijving"></textarea></label>
+				<label>Doelgroepomschrijving <textarea name="doelgroepomschrijving" placeholder="Doelgroepomschrijving"></textarea></label>
+				<label>Doelstelling / intentie van het project <textarea name="doelstelling" placeholder="Doelstelling / intentie van het project"></textarea></label>
+				<label>Looptijd <input name="looptijdstart" type="number"> maanden</label>
+				<label>Deadline <input name="deadline" type="date"></label>
+				Geschikt voor: 
+				<label><input name="eerstejaar-studenten" type="checkbox"> eerstejaars studenten </label>
+				<label><input name="tweedejaar-studenten" type="checkbox"> tweedejaars studenten </label>
+				<label><input name="derdejaar-studenten" type="checkbox"> derdejaars studenten </label>
+				<label><input name="afstudeer-studenten" type="checkbox"> afstudeerjaars studenten </label>
+				<label><input name="onbekend" type="checkbox"> onbekend </label>
+				<label>Opmerking <textarea name="opmerking" placeholder="Opmerking"></textarea></label>
+				</fieldset>
+			</section>
+			
+			<section>
+				<fieldset>
+				<legend> Stage </legend>
+				Geschikt voor: 
+				<label><input name="eerstejaar-studenten" type="checkbox"> eerstejaars studenten</label>
+				<label><input name="tweedejaar-studenten" type="checkbox"> tweedejaars studenten</label>
+				<label><input name="onbekend" type="checkbox"> onbekend</label>
+				<label>Hoe lang is de stage? 
+				<select name="stageduur">
+					<option value="10">10 weken</option>
+					<option value="20">20 weken</option>
+				</select></label>
+				<label>Begindatum<input name="begindatum" type="date"></label>
+				<label>Beschrijving stagewerkzaamheden <textarea name="stagewerkzaamheden" placeholder="stagewerkzaamheden"></textarea></label>
+				Beschrijving stagebedrijf
+				<label>Bedrijfsnaam: <input name="bedrijfsnaam" type="text" placeholder="Bedrijf"></label>
+				<label>Adres: <input name="adres" type="text" placeholder="Adres"></label>
+				<label>Postcode: <input name="postcode" type="text" placeholder="Postcode"></label>
+				<label>Plaats: <input name="plaats" type="text" placeholder="Plaats"></label>
+				<label>Sector: <input name="sector" type="text" placeholder="Sector"></label>
+				<label>Core business: <input name="core_business" type="text" placeholder="Core business"></label>
+				<label>Opmerking <textarea name="opmerking" placeholder="Opmerking"></textarea></label>
+				</fieldset>
+			</section>
+			<input type="submit" value="verzenden">
+		</form>
+	</article>
+</main>
+</body>
+</html>
