@@ -25,24 +25,23 @@
 		
 		<form action="POST">
 			<fieldset>
-			<legend> Contactgegevens </legend>
-			<label>Naam: <input name="naam" type="text" placeholder="Naam" autofocus></label>
-			<label>Bedrijf: <input name="bedrijf" type="text" placeholder="Bedrijf"></label>
-			<label>Adres: <input name="adres" type="text" placeholder="Adres"></label>
-			<label>Postcode: <input name="postcode" type="text" placeholder="Postcode"></label>
-			<label>Plaats: <input name="plaats" type="text" placeholder="Plaats"></label>
-			<label>Telefoon: <input name="telefoon" type="tel" placeholder="Telefoon"></label>
-			<label>Email: <input name="email" type="email" placeholder="Email"></label>
+				<legend> Contactgegevens </legend>
+				<label>Naam: <input name="naam" type="text" placeholder="Naam" autofocus></label>
+				<label>Bedrijf: <input name="bedrijf" type="text" placeholder="Bedrijf"></label>
+				<label>Adres: <input name="adres" type="text" placeholder="Adres"></label>
+				<label>Postcode: <input name="postcode" type="text" placeholder="Postcode"></label>
+				<label>Plaats: <input name="plaats" type="text" placeholder="Plaats"></label>
+				<label>Telefoon: <input name="telefoon" type="tel" placeholder="Telefoon"></label>
+				<label>Email: <input name="email" type="email" placeholder="Email"></label>
+			</fieldset>
+				
+			<fieldset>
+				<legend>Ik wil mij aanmelden voor:</legend>
+				<label><input type="radio" name="aanmelden" value="project"> Voor een project </label>
+				<label><input type="radio" name="aanmelden" value="stage"> Als stagebedrijf	</label>
 			</fieldset>
 			
 			<fieldset>
-			<legend>Ik wil mij aanmelden voor:</legend>
-			<label><input type="radio" name="aanmelden" value="project"> Voor een project </label>
-			<label><input type="radio" name="aanmelden" value="stage"> Als stagebedrijf	</label>
-			</fieldset>
-			
-			<section>
-				<fieldset>
 				<legend> Project </legend>
 				<label>Titel <input name="titel" type="text" placeholder="Titel"></label>
 				<label>Opdrachtomschrijving <textarea name="opdrachtomschrijving" placeholder="Opdrachtomschrijving"></textarea></label>
@@ -57,11 +56,9 @@
 				<label><input name="afstudeer-studenten" type="checkbox"> afstudeerjaars studenten </label>
 				<label><input name="onbekend" type="checkbox"> onbekend </label>
 				<label>Opmerking <textarea name="opmerking" placeholder="Opmerking"></textarea></label>
-				</fieldset>
-			</section>
+			</fieldset>
 			
-			<section>
-				<fieldset>
+			<fieldset>
 				<legend> Stage </legend>
 				Geschikt voor: 
 				<label><input name="eerstejaar-studenten" type="checkbox"> eerstejaars studenten</label>
@@ -82,8 +79,7 @@
 				<label>Sector: <input name="sector" type="text" placeholder="Sector"></label>
 				<label>Core business: <input name="core_business" type="text" placeholder="Core business"></label>
 				<label>Opmerking <textarea name="opmerking" placeholder="Opmerking"></textarea></label>
-				</fieldset>
-			</section>
+			</fieldset>
 			<input type="submit" value="verzenden">
 		</form>
 	</article>
